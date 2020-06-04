@@ -2,7 +2,9 @@ const user = {
     mail: '',       //  Email address
     auth: '',       //  Email password
 
-    host: '',       //  Databse hostname  e.g localhost
-    user: '',       //  Database user     e.g root
+    host: 'localhost',       //  Databse hostname  e.g localhost
+    user: 'root',       //  Database user     e.g root
     password: ''    //  Database password
 }
+
+module.exports = user;

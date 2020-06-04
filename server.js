@@ -25,7 +25,7 @@ server.post('/', (req, res) => {
         route: id
     }
     dbQuery.pendUser(data)
-    mail(data.email, `http://${req.headers.host}/confirm/${id}`)
+    console.log(data.email, `http://${req.headers.host}/confirmEmail/${id}`)
     // console.log(data.email, `http://${req.headers.host}/confirmEmail/${id}`)
     res.sendFile(path.join(__dirname, 'confirm.html'))
 })
